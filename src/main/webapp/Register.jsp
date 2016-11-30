@@ -11,7 +11,7 @@
     <title>Register Page</title>
 </head>
 <body>
-<form action="Register" method="post">
+<form action="register" method="post">
 <table>
     <tr>
         <th>Login:</th>

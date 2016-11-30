@@ -4,47 +4,47 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <!--<filter>-->
-        <!--<filter-name>MVCFilter</filter-name>-->
-        <!--<filter-class>com.christmas.mvc.MVCFilter</filter-class>-->
-    <!--</filter>-->
+    <filter>
+        <filter-name>MVCFilter</filter-name>
+        <filter-class>com.christmas.mvc.MVCFilter</filter-class>
+    </filter>
 
-    <!--<filter-mapping>-->
-        <!--<filter-name>MVCFilter</filter-name>-->
-        <!--<url-pattern>/Christmas</url-pattern>-->
-    <!--</filter-mapping>-->
+    <filter-mapping>
+        <filter-name>MVCFilter</filter-name>
+        <url-pattern>/Christmas</url-pattern>
+    </filter-mapping>
     
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>index.jsp</welcome-file>-->
+    <!--</welcome-file-list>-->
 
-    <servlet>
-        <servlet-name>Validation</servlet-name>
-        <servlet-class>com.christmas.servlet.Validation</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>Validation</servlet-name>-->
+        <!--<servlet-class>com.christmas.servlet.Validation</servlet-class>-->
+    <!--</servlet>-->
 
-    <servlet-mapping>
-        <servlet-name>Validation</servlet-name>
-        <url-pattern>/Validation</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Validation</servlet-name>-->
+        <!--<url-pattern>/Validation</url-pattern>-->
+    <!--</servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>Register</servlet-name>
-        <servlet-class>com.christmas.servlet.Register</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>Register</servlet-name>-->
+        <!--<servlet-class>com.christmas.servlet.Register</servlet-class>-->
+    <!--</servlet>-->
 
-    <servlet-mapping>
-        <servlet-name>Register</servlet-name>
-        <url-pattern>/Register</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Register</servlet-name>-->
+        <!--<url-pattern>/Register</url-pattern>-->
+    <!--</servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>Logout</servlet-name>
-        <servlet-class>com.christmas.servlet.Logout</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>Logout</servlet-name>-->
+        <!--<servlet-class>com.christmas.servlet.Logout</servlet-class>-->
+    <!--</servlet>-->
 
-    <servlet-mapping>
-        <servlet-name>Logout</servlet-name>
-        <url-pattern>/Logout</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Logout</servlet-name>-->
+        <!--<url-pattern>/Logout</url-pattern>-->
+    <!--</servlet-mapping>-->
     </web-app>

@@ -16,12 +16,13 @@ public class RegisterPageController implements MVCController {
     @Override
     public MVCModel execute(HttpServletRequest request) {
         try {
+            System.out.println("in register controller");
             User user = new User();
-            String userLogin = request.getParameter("login");
-            String userPassword = request.getParameter("password");
-            String userFirstName = request.getParameter("firstname");
-            String userLastName = request.getParameter("lastname");
-            String userEmail = request.getParameter("email");
+            String userLogin = request.getParameter("user_login");
+            String userPassword = request.getParameter("user_password");
+            String userFirstName = request.getParameter("user_firstname");
+            String userLastName = request.getParameter("user_lastname");
+            String userEmail = request.getParameter("user_email");
             user.setLogin(userLogin);
             user.setPassword(userPassword);
             user.setFirstName(userFirstName);
@@ -29,10 +30,9 @@ public class RegisterPageController implements MVCController {
             user.setEmail(userEmail);
             userDAO.create(user);
             System.out.println("Succesful");
-            return new MVCModel("data", "index.jsp");
         } catch (Exception e) {
             System.out.println("Exception with user creating");
         }
-        return new MVCModel("data", "index.jsp");
+        return new MVCModel("model", "index.jsp");
     }
 }
